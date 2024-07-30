@@ -1,36 +1,50 @@
+<script setup>
+import Footer from './components/FooterComponent.vue';
+</script>
 <template>
     <v-app>
         <v-main>
+            <v-parallax src="/img/villarrica_parallax.jpg" height="800">
+                <div class="d-flex flex-column fill-height justify-center align-center text-white">
+                    <img src="@/assets/logo.svg" alt="Partido Comunista de Chile" class="logo">
+                    <h1 class="text-h1">
+                        Partido Comunista de Chile
+                    </h1>
+                    <h2 class="text-h2">
+                        Villarrica
+                    </h2>
+                </div>
+            </v-parallax>
             <v-container fluid>
-                <v-row class="fill-height align-center justify-center">
-                    <v-col cols="12">
-                        <v-img src="/img/BigBanner.jpg" height="500" cover></v-img>
-                    </v-col>
-                </v-row>
-
                 <v-container>
                     <v-row>
-                        <v-col cols="12">
-                            <h2>¿Qué es este proyecto?</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </v-col>
-                    </v-row>
+                        <v-col>
+                            <v-card>
+                                <v-card-title>
+                                    Bienvenidos al Partido Comunista de Chile en Villarrica
+                                </v-card-title>
+                                <v-card-subtitle>
+                                    Célula “Hermanos Velásquez Mardones”
+                                </v-card-subtitle>
+                                <v-card-text>
+                                    <p>
+                                        Estamos trabajando arduamente en la construcción de nuestro sitio web. Pronto,
+                                        ofreceremos contenido relevante y de interés para todos los habitantes de
+                                        Villarrica.
 
-                    <v-row>
-                        <v-col cols="12">
-                            <h2>¿Por qué es importante?</h2>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </p>
+                                        ¡Mantente atento! Muy pronto estaremos listos para compartir nuestras ideas,
+                                        noticias y actividades.
+
+                                        ¡Hasta pronto!
+                                    </p>
+                                </v-card-text>
+                            </v-card>
                         </v-col>
                     </v-row>
                 </v-container>
 
             </v-container>
         </v-main>
+        <Footer />
     </v-app>
 </template>
