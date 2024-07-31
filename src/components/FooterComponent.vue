@@ -11,7 +11,7 @@ const goToYoutube = () => {
 
 </script>
 <template>
-    <v-footer padless height="auto" color="red" class="text-center">
+    <v-footer padless height="auto" color="red-darken-4" class="text-center">
         <v-row class="align-center justify-center">
             <v-col cols="12" class="py-4">
                 <v-icon color="white" class="mx-2" @click="goToInstagram">

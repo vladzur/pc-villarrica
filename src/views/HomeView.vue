@@ -1,14 +1,35 @@
+<script setup>
+import BigBanner from '@/components/BigBanner.vue';
+</script>
 <template>
-  <div class="container is-fluid">
-    <div class="columns">
-      <div class="column">
-        <div class="notification">
-          <h4 class="alert-heading">Bienvenido al sitio web del PC Villarrica</h4>
-          <p>Este sitio web está en construcción, por lo que algunas secciones pueden no estar disponibles.</p>
-          <hr>
-          <p class="mb-0">Gracias por su comprensión.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <BigBanner />
+  <v-container fluid>
+    <v-container>
+      <v-row>
+        <v-col>
+          <v-card>
+            <v-card-title>
+              Bienvenidos al Partido Comunista de Chile en Villarrica
+            </v-card-title>
+            <v-card-subtitle>
+              Célula “Hermanos Velásquez Mardones”
+            </v-card-subtitle>
+            <v-card-text>
+              <p>
+                Estamos trabajando arduamente en la construcción de nuestro sitio web. Pronto,
+                ofreceremos contenido relevante y de interés para todos los habitantes de
+                Villarrica.
+
+                ¡Mantente atento! Muy pronto estaremos listos para compartir nuestras ideas,
+                noticias y actividades.
+
+                ¡Hasta pronto!
+              </p>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
+  </v-container>
 </template>
