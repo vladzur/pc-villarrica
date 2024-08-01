@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 const news = ref([]);
 const getNews = async () => {
-    const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.pcchile.cl/feed/');
+    const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.pcchile.cl/category/noticias/feed/');
     const data = await response.json();
     news.value = data.items;
 }
