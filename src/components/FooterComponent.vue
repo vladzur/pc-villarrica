@@ -27,6 +27,11 @@ const goToYoutube = () => {
             <v-col cols="12" class="py-4">
                 <span class="white--text">&copy; {{ new Date().getFullYear() }} - PC Villarrica</span>
             </v-col>
+            <v-col cols="12" class="py-4">
+                <v-icon color="white" class="mx-2">
+                    <v-icon icon="mdi-hammer-sickle" />
+                </v-icon>
+            </v-col>
         </v-row>
     </v-footer>
 </template>
