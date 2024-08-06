@@ -4,7 +4,7 @@ const news = ref([]);
 const isLoading = ref(false);
 const getNews = async () => {
     isLoading.value = true;
-    const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.pcchile.cl/category/noticias/feed/');
+    const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://radionuevomundo.cl/categoria/noticias/feed/');
     const data = await response.json();
     isLoading.value = false;
     news.value = data.items;
